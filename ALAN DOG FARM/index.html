@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ALAN DOG FARM</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+        <h1>🐶 ALAN DOG FARM 🐶</h1>
+        <p>Find Your Perfect Companion</p>
+    </header>
+
+
+    <!-- ================= NAVIGATION ================= -->
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#dogs">Dogs</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+
+    <!-- ================= WELCOME ================= -->
+
+    <section class="welcome">
+
+        <h2>Welcome to ALAN DOG FARM</h2>
+
+        <p>
+            Find the perfect dog for your family.
+        </p>
+
+        <button onclick="document.getElementById('dogs').scrollIntoView()">
+            View Available Dogs
+        </button>
+
+    </section>
+
+
+    <!-- ================= DOGS SECTION ================= -->
+
+    <section id="dogs">
+
+        <h2 class="section-title">
+            Available Dogs
+        </h2>
+
+
+        <!-- SEARCH BAR -->
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="🔍 Search dog breed..."
+            >
+
+        </div>
+
+
+        <!-- DOG CONTAINER -->
+
+        <div class="dog-container">
+
+
+            <!-- ================= AMERICAN PITBULL ================= -->
+
+            <div class="dog-card">
+
+                <div class="dog-image">
+
+                    <img
+                        src="images/american pitbull.jpg"
+                        alt="American Pitbull"
+                    >
+
+                </div>
+
+                <h2>dharani</h2>
+
+                <p><b>Age:</b> 2 Years</p>
+
+                <p><b>Gender:</b> Male</p>
+
+                <p><b>Price:</b> ₹25,000</p>
+
+                <p><b>Location:</b> Chennai</p>
+
+                <button onclick="viewDetails(
+                    'dharani',
+                    '2 Years',
+                    'Male',
+                    '₹25,000',
+                    'Chennai',
+                    'images/american pitbull.jpg'
+                )">
+                    View Details
+                </button>
+
+            </div>
+
+
+            <!-- ================= BEAGLE ================= -->
+
+            <div class="dog-card">
+
+                <div class="dog-image">
+
+                    <img
+                        src="images/beagle.jpg"
+                        alt="Beagle"
+                    >
+
+                </div>
+
+                <h2>Beagle</h2>
+
+                <p><b>Age:</b> 1 Year</p>
+
+                <p><b>Gender:</b> Female</p>
+
+                <p><b>Price:</b> ₹20,000</p>
+
+                <p><b>Location:</b> Chennai</p>
+
+                <button onclick="viewDetails(
+                    'Beagle',
+                    '1 Year',
+                    'Female',
+                    '₹20,000',
+                    'Chennai',
+                    'images/beagle.jpg'
+                )">
+                    View Details
+                </button>
+
+            </div>
+
+
+            <!-- ================= BOXER ================= -->
+
+            <div class="dog-card">
+
+                <div class="dog-image">
+
+                    <img
+                        src="images/boxer.jpg"
+                        alt="Boxer"
+                    >
+
+                </div>
+
+                <h2>Boxer</h2>
+
+                <p><b>Age:</b> 2 Years</p>
+
+                <p><b>Gender:</b> Male</p>
+
+                <p><b>Price:</b> ₹30,000</p>
+
+                <p><b>Location:</b> Chennai</p>
+
+                <button onclick="viewDetails(
+                    'Boxer',
+                    '2 Years',
+                    'Male',
+                    '₹30,000',
+                    'Chennai',
+                    'images/boxer.jpg'
+                )">
+                    View Details
+                </button>
+
+            </div>
+
+
+            <!-- ================= CANE CORSO ================= -->
+
+            <div class="dog-card">
+
+                <div class="dog-image">
+
+                    <img
+                        src="images/cane croso.jpg"
+                        alt="Cane Corso"
+                    >
+
+                </div>
+
+                <h2>Cane Corso</h2>
+
+                <p><b>Age:</b> 2 Years</p>
+
+                <p><b>Gender:</b> Male</p>
+
+                <p><b>Price:</b> ₹45,000</p>
+
+                <p><b>Location:</b> Chennai</p>
+
+                <button onclick="viewDetails(
+                    'Cane Corso',
+                    '2 Years',
+                    'Male',
+                    '₹45,000',
+                    'Chennai',
+                    'images/cane croso.jpg'
+                )">
+                    View Details
+                </button>
+
+            </div>
+
+
+            <!-- ================= DASH ================= -->
+
+            <div class="dog-card">
+
+                <div class="dog-image">
+
+                    <img
+                        src="images/dash.jpg"
+                        alt="Dash"
+                    >
+
+                </div>
+
+                <h2>Dash</h2>
+
+                <p><b>Age:</b> 1 Year</p>
+
+                <p><b>Gender:</b> Male</p>
+
+                <p><b>Price:</b> ₹18,000</p>
+
+                <p><b>Location:</b> Chennai</p>
+
+                <button onclick="viewDetails(
+                    'dash',
+                    '1 Year',
+                    'Male',
+                    '₹18,000',
+                    'Chennai',
+                    'images/dash.jpg'
+                )">
+                    View Details
+                </button>
+
+            </div>
+
+
+            <!-- ================= GERMAN SHEPHERD ================= -->
+
+            <div class="dog-card">
+
+                <div class="dog-image">
+
+                    <img
+                        src="images/German-Shepherd.jpg"
+                        alt="German Shepherd"
+                    >
+
+                </div>
+
+                <h2>German Shepherd</h2>
+
+                <p><b>Age:</b> 2 Years</p>
+
+                <p><b>Gender:</b> Male</p>
+
+                <p><b>Price:</b> ₹35,000</p>
+
+                <p><b>Location:</b> Chennai</p>
+
+                <button onclick="viewDetails(
+                    'German Shepherd',
+                    '2 Years',
+                    'Male',
+                    '₹35,000',
+                    'Chennai',
+                    'images/German-Shepherd.jpg'
+                )">
+                    View Details
+                </button>
+
+            </div>
+
+
+            <!-- ================= GOLDEN RETRIEVER ================= -->
+
+            <div class="dog-card">
+
+                <div class="dog-image">
+
+                    <img
+                        src="images/golden-retriever.jpg"
+                        alt="Golden Retriever"
+                    >
+
+                </div>
+
+                <h2>Golden Retriever</h2>
+
+                <p><b>Age:</b> 2 Years</p>
+
+                <p><b>Gender:</b> Male</p>
+
+                <p><b>Price:</b> ₹25,000</p>
+
+                <p><b>Location:</b> Chennai</p>
+
+                <button onclick="viewDetails(
+                    'Golden Retriever',
+                    '2 Years',
+                    'Male',
+                    '₹25,000',
+                    'Chennai',
+                    'images/golden-retriever.jpg'
+                )">
+                    View Details
+                </button>
+
+            </div>
+
+
+            <!-- ================= GRADEN ================= -->
+
+            <div class="dog-card">
+
+                <div class="dog-image">
+
+                    <img
+                        src="images/graden.jpg"
+                        alt="Graden"
+                    >
+
+                </div>
+
+                <h2>Graden</h2>
+
+                <p><b>Age:</b> 1 Year</p>
+
+                <p><b>Gender:</b> Female</p>
+
+                <p><b>Price:</b> ₹22,000</p>
+
+                <p><b>Location:</b> Chennai</p>
+
+                <button onclick="viewDetails(
+                    'Graden',
+                    '1 Year',
+                    'Female',
+                    '₹22,000',
+                    'Chennai',
+                    'images/graden.jpg'
+                )">
+                    View Details
+                </button>
+
+            </div>
+
+
+            <!-- ================= KANNI ================= -->
+
+            <div class="dog-card">
+
+                <div class="dog-image">
+
+                    <img
+                        src="images/kanni.jpg"
+                        alt="Kanni"
+                    >
+
+                </div>
+
+                <h2>Kanni</h2>
+
+                <p><b>Age:</b> 2 Years</p>
+
+                <p><b>Gender:</b> Male</p>
+
+                <p><b>Price:</b> ₹15,000</p>
+
+                <p><b>Location:</b> Tamil Nadu</p>
+
+                <button onclick="viewDetails(
+                    'Kanni',
+                    '2 Years',
+                    'Male',
+                    '₹15,000',
+                    'Tamil Nadu',
+                    'images/kanni.jpg'
+                )">
+                    View Details
+                </button>
+
+            </div>
+
+
+            <!-- ================= KOMBAI ================= -->
+
+            <div class="dog-card">
+
+                <div class="dog-image">
+
+                    <img
+                        src="images/kombai.jpg"
+                        alt="Kombai"
+                    >
+
+                </div>
+
+                <h2>Kombai</h2>
+
+                <p><b>Age:</b> 2 Years</p>
+
+                <p><b>Gender:</b> Male</p>
+
+                <p><b>Price:</b> ₹18,000</p>
+
+                <p><b>Location:</b> Tamil Nadu</p>
+
+                <button onclick="viewDetails(
+                    'Kombai',
+                    '2 Years',
+                    'Male',
+                    '₹18,000',
+                    'Tamil Nadu',
+                    'images/kombai.jpg'
+                )">
+                    View Details
+                </button>
+
+            </div>
+
+
+            <!-- ================= LABRADOR ================= -->
+
+            <div class="dog-card">
+
+                <div class="dog-image">
+
+                    <img
+                        src="images/lab.jpg"
+                        alt="Labrador"
+                    >
+
+                </div>
+
+                <h2>Labrador</h2>
+
+                <p><b>Age:</b> 1 Year</p>
+
+                <p><b>Gender:</b> Female</p>
+
+                <p><b>Price:</b> ₹22,000</p>
+
+                <p><b>Location:</b> Chennai</p>
+
+                <button onclick="viewDetails(
+                    'Labrador',
+                    '1 Year',
+                    'Female',
+                    '₹22,000',
+                    'Chennai',
+                    'images/lab.jpg'
+                )">
+                    View Details
+                </button>
+
+            </div>
+
+
+            <!-- ================= ROTTWEILER ================= -->
+
+            <div class="dog-card">
+
+                <div class="dog-image">
+
+                    <img
+                        src="images/rotwiller.jpg"
+                        alt="Rottweiler"
+                    >
+
+                </div>
+
+                <h2>Rottweiler</h2>
+
+                <p><b>Age:</b> 2 Years</p>
+
+                <p><b>Gender:</b> Male</p>
+
+                <p><b>Price:</b> ₹40,000</p>
+
+                <p><b>Location:</b> Chennai</p>
+
+                <button onclick="viewDetails(
+                    'Rottweiler',
+                    '2 Years',
+                    'Male',
+                    '₹40,000',
+                    'Chennai',
+                    'images/rotwiller.jpg'
+                )">
+                    View Details
+                </button>
+
+            </div>
+
+
+            <!-- ================= SHIH TZU ================= -->
+
+            <div class="dog-card">
+
+                <div class="dog-image">
+
+                    <img
+                        src="images/Shih-Tzu.jpg"
+                        alt="Shih Tzu"
+                    >
+
+                </div>
+
+                <h2>Shih Tzu</h2>
+
+                <p><b>Age:</b> 1 Year</p>
+
+                <p><b>Gender:</b> Female</p>
+
+                <p><b>Price:</b> ₹28,000</p>
+
+                <p><b>Location:</b> Chennai</p>
+
+                <button onclick="viewDetails(
+                    'Shih Tzu',
+                    '1 Year',
+                    'Female',
+                    '₹28,000',
+                    'Chennai',
+                    'images/Shih-Tzu.jpg'
+                )">
+                    View Details
+                </button>
+
+            </div>
+
+
+            <!-- ================= SIBERIAN HUSKY ================= -->
+
+            <div class="dog-card">
+
+                <div class="dog-image">
+
+                    <img
+                        src="images/Siberian-Husky.jpg"
+                        alt="Siberian Husky"
+                    >
+
+                </div>
+
+                <h2>Siberian Husky</h2>
+
+                <p><b>Age:</b> 2 Years</p>
+
+                <p><b>Gender:</b> Male</p>
+
+                <p><b>Price:</b> ₹35,000</p>
+
+                <p><b>Location:</b> Chennai</p>
+
+                <button onclick="viewDetails(
+                    'Siberian Husky',
+                    '2 Years',
+                    'Male',
+                    '₹35,000',
+                    'Chennai',
+                    'images/Siberian-Husky.jpg'
+                )">
+                    View Details
+                </button>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= DETAILS POPUP ================= -->
+
+    <div id="detailsBox" class="details-box">
+
+        <div class="details-content">
+
+            <span
+                class="close-btn"
+                onclick="closeDetails()">
+                ✖
+            </span>
+
+
+            <img
+                id="detailsImage"
+                src=""
+                alt="Dog"
+            >
+
+
+            <h2 id="detailsName"></h2>
+
+
+            <p>
+                <b>Age:</b>
+                <span id="detailsAge"></span>
+            </p>
+
+
+            <p>
+                <b>Gender:</b>
+                <span id="detailsGender"></span>
+            </p>
+
+
+            <p>
+                <b>Price:</b>
+                <span id="detailsPrice"></span>
+            </p>
+
+
+            <p>
+                <b>Location:</b>
+                <span id="detailsLocation"></span>
+            </p>
+
+
+            <button onclick="contactOwner()">
+                📞 Contact Owner
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= ABOUT ================= -->
+
+    <section id="about" class="about">
+
+        <h2>About ALAN DOG FARM</h2>
+
+        <p>
+            ALAN DOG FARM provides different dog breeds
+            for families and dog lovers.
+        </p>
+
+    </section>
+
+
+    <!-- ================= CONTACT ================= -->
+
+    <section id="contact" class="contact">
+
+        <h2>Contact Us</h2>
+
+        <p>📞 Phone: 63803 03570</p>
+
+        <p>📧 Email: alandogfarm@gmail.com</p>
+
+        <p>
+            📍 Location: Kanchipuram, Padappai,
+            Vivekananda Nagar, 11st, 6/318, Tamil Nadu
+        </p>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <p>
+            © 2026 ALAN DOG FARM | All Rights Reserved
+        </p>
+
+    </footer>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
